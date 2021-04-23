@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	
+	<script type="text/javascript">
+	
+		function calenacentymetry()
+		{
+			var cale = document.getElementById("cale").value;
+			
+			document.getElementById("wynik").innerHTML=cale*2.54;
+		
+		}
+
+        function centymetrynacale()
+        {
+            var centymetry = document.getElementById("centymetry").value;
+
+            document.getElementById("w").innerHTML=centymetry*0.39;
+        }
+	
+	</script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <h2>Przelicz cale na centymetry</h2>
+	<input type="text" id="cale" />
+	<input type="submit" value="Przelicz" onclick="calenacentymetry()"/>
+	
+	<div id="wynik"></div>
+    <br/>
+    <h2>Przelicz centymetry na cale</h2>
+    <input type="text" id="centymetry"/>
+    <input type="submit" value="Przelicz" onclick="centymetrynacale()">
+    <div id="w"></div>
+
+</body>
+
+</html>
